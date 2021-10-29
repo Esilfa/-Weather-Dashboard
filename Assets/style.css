@@ -20,7 +20,7 @@ img {
     height: 100px;
 }
  /* 5 day forecast */ 
-.fiveDayColor {
+.DayColor {
     padding: 20px;
     background-color: #9b9fa3;
     color: white;
