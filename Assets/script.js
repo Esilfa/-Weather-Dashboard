@@ -39,6 +39,7 @@ searchButton.on("click", function () {
                 cityName.append("<li>" + response.name + "</li>");
 
                 var currentCard = $(".currentCard").append("<div>").addClass("card-body");
+ 
 
                 currentCard.empty();
                 var time = new Date(response.dt * 1000);
@@ -49,11 +50,13 @@ searchButton.on("click", function () {
                 var currentTemp = currentName.append("<p>");
                 currentName.append(currentTemp);
                 console.log(response.main.temp);
+                
                 currentTemp.append("<p>" + "Temperature: " + response.main.temp + "</p>");
 
                 currentTemp.append("<p>" + "Humidity: " + response.main.humidity + "%" + "</p>");
 
                 currentTemp.append("<p>" + "Wind Speed: " + response.wind.speed + "</p>");
+                currentName.append(`<img src="https://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png">`);
 
             }
 
