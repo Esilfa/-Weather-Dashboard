@@ -5,7 +5,6 @@ var searchInput = $(".searchInputs").val();
 
 // var currentUrl = 'http://api.openweathermap.org/data/2.5/weather?q=' + searchInput + "&units=imperial" + "&APPID=9defd3ed051151cc8b9327dd9b348343";
 
-var urlFiveDay = "https://api.openweathermap.org/data/2.5/weather?q=" + searchInput + apiKey + "&units=imperial";
 
 // WHEN I search for a city
 // THEN I am presented with current and future conditions for that city and that city is added to the search history
