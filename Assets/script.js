@@ -51,12 +51,14 @@ searchButton.on("click", function () {
                 currentName.append(currentTemp);
                 console.log(response.main.temp);
                 
+                currentName.append(`<img src="https://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png">`);
+                
                 currentTemp.append("<p>" + "Temperature: " + response.main.temp + "</p>");
 
                 currentTemp.append("<p>" + "Humidity: " + response.main.humidity + "%" + "</p>");
 
                 currentTemp.append("<p>" + "Wind Speed: " + response.wind.speed + "</p>");
-                currentName.append(`<img src="https://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png">`);
+                
 
             }
 
